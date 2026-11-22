@@ -23,20 +23,6 @@ Install Git for Windows. Use Git Bash or Command Prompt for Git commands.
 
 
 
-Open Command Prompt and run:
-
-```cmd
-git clone https://github.com/GANESH-NADKARNI/Hadoop-Windows-Setup.git
-```
-
-Move into the repository:
-
-```cmd
-cd Hadoop-Windows-Setup
-```
-
-To download the repository again later, use the same `git clone` command from a different folder.
-
 ## 3. Install Java
 
 1. Install Java JDK 8.
