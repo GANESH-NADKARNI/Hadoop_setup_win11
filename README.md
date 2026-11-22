@@ -21,7 +21,7 @@ A beginner-friendly guide to installing and configuring Apache Hadoop 3.3.6 on W
 
 Install Git for Windows. Use Git Bash or Command Prompt for Git commands.
 
-## 3. Clone This Repository
+
 
 Open Command Prompt and run:
 
@@ -37,7 +37,7 @@ cd Hadoop-Windows-Setup
 
 To download the repository again later, use the same `git clone` command from a different folder.
 
-## 4. Install Java
+## 3. Install Java
 
 1. Install Java JDK 8.
 2. Set the installation location to:
@@ -53,7 +53,7 @@ javac -version
 
 Both commands should display Java version information.
 
-## 5. Install Hadoop
+## 4. Install Hadoop
 
 1. Create this folder:
 
@@ -70,7 +70,7 @@ Your Hadoop installation should be:
 C:\Hadoop\hadoop-3.3.6
 ```
 
-## 6. Add Windows Hadoop Binaries
+## 5. Add Windows Hadoop Binaries
 
 1. Open the downloaded Windows binaries repository.
 2. Select the Hadoop 3.3.6 binaries.
@@ -86,7 +86,7 @@ C:\Hadoop\hadoop-3.3.6\bin\winutils.exe
 C:\Hadoop\hadoop-3.3.6\bin\hadoop.dll
 ```
 
-## 7. Configure Environment Variables
+## 6. Configure Environment Variables
 
 Open:
 
@@ -119,7 +119,7 @@ java -version
 hadoop version
 ```
 
-## 8. Configure Hadoop Files
+## 7. Configure Hadoop Files
 
 Go to:
 
@@ -195,7 +195,7 @@ Open `yarn-site.xml` and replace its contents with:
 </configuration>
 ```
 
-## 9. Configure Java in Hadoop
+## 8. Configure Java in Hadoop
 
 Open:
 
@@ -209,7 +209,7 @@ set JAVA_HOME=C:\Java
 
 Save the file.
 
-## 10. Create Hadoop Data Folders
+## 9. Create Hadoop Data Folders
 
 Open Command Prompt and execute:
 
@@ -219,7 +219,7 @@ mkdir C:\Hadoop\hadoop-3.3.6\data\namenode
 mkdir C:\Hadoop\hadoop-3.3.6\data\datanode
 ```
 
-## 11. Format the NameNode
+## 10. Format the NameNode
 
 Execute:
 
@@ -231,7 +231,7 @@ Wait for formatting to complete successfully.
 
 **Important:** Run this only when initializing a new Hadoop installation. Do not format an existing cluster again, as existing HDFS data may become inaccessible.
 
-## 12. Start Hadoop Services
+## 11. Start Hadoop Services
 
 Open Command Prompt:
 
@@ -251,7 +251,7 @@ Start YARN:
 start-yarn.cmd
 ```
 
-## 13. Verify Hadoop Services
+## 12. Verify Hadoop Services
 
 Open a new Command Prompt:
 
